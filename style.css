@@ -73,7 +73,7 @@ h3 {
     /* text-align: right; */
 }
 
-.modal {
+.form {
     z-index: 99;
     border-radius: 10%;
     display: none;
@@ -86,6 +86,7 @@ h3 {
     background-color: rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0.5);
     flex-direction: column;
+    
 }
 
 .message {

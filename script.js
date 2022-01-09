@@ -1,6 +1,6 @@
 
 const pencilModal = document.querySelector('.pencil');
-const modal = document.querySelector('.modal');
+const formModal = document.querySelector('.form');
 
 const closeBtn = document.querySelector('.close-btn');
 const submitBtn = document.querySelector('.submit-btn');
@@ -24,16 +24,16 @@ submitBtn.addEventListener('click', function(e) {
     usersQueryObject.push(_newUserQuery);
     console.log(usersQueryObject);
     document.querySelector('form').reset();
-    modal.style.display = "none"
+    formModal.style.display = "none"
 
     localStorage.setItem('MyGuestList', JSON.stringify(usersQueryObject));  
 })
 
 pencilModal.addEventListener('click', function() {
-    modal.style.display = 'block';
+    formModal.style.display = 'block';
 })
 
 closeBtn.onclick = function(e) {
     e.preventDefault();
-    modal.style.display = "none"
+    formModal.style.display = "none"
 }
